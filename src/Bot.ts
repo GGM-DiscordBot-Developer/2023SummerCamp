@@ -52,7 +52,7 @@ client.on("guildMemberAdd", async (member) => {
         dm.send({options: {ephemeral: true}, content: "관리자에게 수강 강좌와 학번 이름을 보내주세요. 관리자명: kwak1s1h"});
         return;
     }
-    member.setNickname(ggmUser.displayName);
+    member.setNickname(ggmUser.nickname);
     
     let name: string;
     let grade: string;
